@@ -28,13 +28,20 @@
         
             <% for(int i = 0; i < barras; i ++){ %>
         
-                <label for="nombre">Tabla: </label>
+                <label for="nombre">Altura de la barra(Entre 1 - 100 para su correcto funcionamiento) </label>
                 <input type="text" name="nombre<%=i%>">
                 <input type="color" name="color<%=i%>" value="#1BF44A"> 
             
                 <br/> <br/>
         
             <%}%>
+            
+            <br/> <br/>
+            
+            <label for="nombre">El numero de barras seleccionado era <%=barras%> </label>
+            <br/> <br/>
+            <label for="nombre">Introduzca de nuevo el numero de barras </label>
+            <input type="text" name="barras" id="barras">
         
             <p><input type="submit" name="Submit" value="Dibujar"></p>
         </form>
